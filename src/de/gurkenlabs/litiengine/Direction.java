@@ -29,13 +29,13 @@ public enum Direction {
    * Gets a direction corresponding to the specified angle. Every direction translates to 1/4th (90°) of a full circle.
    * 
    * <pre>
-       o 180 o        DOWN = [0-45[ &amp; [315-360]
-     o         o      
-    o           o     RIGHT = [45-135[
-   270          90    
-    o           o     UP = [135-225[
-     o         o
-       o  0  o        LEFT = [225-315[
+|       o 180 o        DOWN = [0-45[ &amp; [315-360]
+|     o         o      
+|    o           o     RIGHT = [45-135[
+|   270          90    
+|    o           o     UP = [135-225[
+|     o         o
+|       o  0  o        LEFT = [225-315[
    * </pre>
    * 
    * @param angle

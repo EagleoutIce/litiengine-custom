@@ -57,7 +57,7 @@ public class DefaultUncaughtExceptionHandler implements UncaughtExceptionHandler
   }
 
   /**
-   * Indicates whether this hander currently exits the game upon an unhandled exception.
+   * Indicates whether this handler currently exits the game upon an unhandled exception.
    * 
    * @return True if the game will exit upon an unhandled exception; otherwise false.
    */

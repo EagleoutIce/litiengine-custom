@@ -5,6 +5,7 @@ import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Frame;
+import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Image;
@@ -123,8 +124,7 @@ public final class GameWindow {
   /**
    * Gets the current resolution scale. The resolution scale is a float value dictating how much larger or smaller each pixel is rendered on screen.
    * 
-   * @return
-   *         The GameWindow's current resolution scale.
+   * @return The GameWindow's current resolution scale.
    * 
    */
   public float getResolutionScale() {
@@ -134,8 +134,7 @@ public final class GameWindow {
   /**
    * Gets the current resolution scale. The resolution scale is a float value dictating how much larger or smaller each pixel is rendered on screen.
    * 
-   * @return
-   *         The {@code GameWindow}'s current resolution scale.
+   * @return The {@code GameWindow}'s current resolution scale.
    * 
    */
   public Point2D getCenter() {
@@ -145,8 +144,7 @@ public final class GameWindow {
   /**
    * Gets the {@code GameWindow}'s JFrame, abstracted as a Container.
    * 
-   * @return
-   *         The {@code GameWindow}'s {@code JFrame} as an abstract AWT {@code Container}.
+   * @return The {@code GameWindow}'s {@code JFrame} as an abstract AWT {@code Container}.
    * 
    */
   public Container getHostControl() {
@@ -156,8 +154,7 @@ public final class GameWindow {
   /**
    * Gets the window width and height wrapped in a {@code Dimension} object.
    * 
-   * @return
-   *         The {@code GameWindow}'s size as a {@link Dimension}.
+   * @return The {@code GameWindow}'s size as a {@link Dimension}.
    * 
    */
   public Dimension getSize() {
@@ -167,8 +164,7 @@ public final class GameWindow {
   /**
    * Gets the window width.
    * 
-   * @return
-   *         The window width.
+   * @return The window width.
    * 
    */
   public int getWidth() {
@@ -178,8 +174,7 @@ public final class GameWindow {
   /**
    * Gets the window height.
    * 
-   * @return
-   *         The window height.
+   * @return The window height.
    * 
    */
   public int getHeight() {
@@ -211,8 +206,7 @@ public final class GameWindow {
   /**
    * Gets the window resolution wrapped in a {@code Dimension} object.
    * 
-   * @return
-   *         The {@code GameWindow}'s internal resolution as a {@link Dimension}.
+   * @return The {@code GameWindow}'s internal resolution as a {@link Dimension}.
    * 
    */
   public Dimension getResolution() {
@@ -222,8 +216,7 @@ public final class GameWindow {
   /**
    * Gets the screen location of the window's top left corner.
    * 
-   * @return
-   *         The {@code Point} of the window's top left corner.
+   * @return The {@code Point} of the window's top left corner.
    * @see Container#getLocationOnScreen
    * 
    */

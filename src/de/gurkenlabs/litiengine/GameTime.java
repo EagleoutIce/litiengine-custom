@@ -88,36 +88,36 @@ public final class GameTime implements EnvironmentLoadedListener {
    *          The updateRate that is used for the conversion.
    * @return The milliseconds that correspond to the specified ticks.
    */
-  public long toMilliseconds(final long ticks, int updateRate) {
-    return (long) (ticks / (updateRate / 1000.0));
+  public long toMilliseconds(final long ticks, final int updateRate) {
+      return (long) (ticks / (updateRate / 1000.0));
   }
 
   /**
    * Converts the specified milliseconds to ticks using the game loop's update rate.
    * 
    * @param milliseconds
-   *          The milliseconds that will be converted to ticks.
+   *                         The milliseconds that will be converted to ticks.
    * @return The ticks that correspond to the specified milliseconds.
    */
   public long toTicks(final int milliseconds) {
-    return this.toTicks(milliseconds, Game.loop().getTickRate());
+      return this.toTicks(milliseconds, Game.loop().getTickRate());
   }
 
   /**
    * Converts the specified milliseconds to ticks using the specified update rate.
    * 
    * @param milliseconds
-   *          The milliseconds that will be converted to ticks.
+   *                         The milliseconds that will be converted to ticks.
    * @param updateRate
-   *          The updateRate that is used for the conversion.
+   *                         The updateRate that is used for the conversion.
    * @return The ticks that correspond to the specified milliseconds.
    */
-  public long toTicks(final int milliseconds, int updateRate) {
-    return (long) (updateRate / 1000.0 * milliseconds);
+  public long toTicks(final int milliseconds, final int updateRate) {
+      return (long) (updateRate / 1000.0 * milliseconds);
   }
 
   @Override
-  public void loaded(Environment environment) {
+  public void loaded(final Environment environment) {
     environmentLoaded = Game.loop().getTicks();
   }
 }
