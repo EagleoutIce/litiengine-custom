@@ -35,6 +35,7 @@ public class TextFieldComponent extends ImageComponent {
     this.setText(text);
     this.flickerDelay = 100;
     Input.keyboard().onKeyTyped(this::handleTypedKey);
+    Input.keyboard().onKeyPressed(this::handlePressedKey);
     this.onClicked(e -> {
       if (!this.isSelected()) {
         this.toggleSelection();
@@ -63,7 +64,7 @@ public class TextFieldComponent extends ImageComponent {
     return this.fullText;
   }
 
-  public void handleTypedKey(final KeyEvent event) {
+  public void handlePressedKey(final KeyEvent event) {
     if (this.isSuspended() || !this.isSelected() || !this.isVisible() || !this.isEnabled()) {
       return;
     }
@@ -71,6 +72,17 @@ public class TextFieldComponent extends ImageComponent {
     switch (event.getKeyCode()) {
     case KeyEvent.VK_BACK_SPACE:
       this.handleBackSpace();
+      break;
+    }
+  }
+
+  public void handleTypedKey(final KeyEvent event) {
+    if (this.isSuspended() || !this.isSelected() || !this.isVisible() || !this.isEnabled()) {
+      return;
+    }
+
+    switch (event.getKeyCode()) {
+    case KeyEvent.VK_BACK_SPACE:
       break;
     case KeyEvent.VK_SPACE:
       if (!this.getText().equals("")) {
