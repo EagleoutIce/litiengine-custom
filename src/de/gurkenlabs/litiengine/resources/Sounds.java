@@ -21,12 +21,12 @@ public final class Sounds extends ResourcesContainer<Sound> {
 
   /**
    * Loads a sound from the specified XML resource.
-   * 
+   *
    * @param resource
    *          The XML resource that contains the sound as Base64 string.
-   * 
+   *
    * @return The {@code Sound} instance loaded from the specified resource.
-   * 
+   *
    * @see Codec#decode(String)
    */
   public Sound load(final SoundResource resource) {
@@ -46,7 +46,7 @@ public final class Sounds extends ResourcesContainer<Sound> {
 
   /**
    * Loads the sound from the specified path and returns it.
-   * 
+   *
    * @param resourceName
    *          The path of the file to be loaded.(Can be relative or absolute)
    * @return The loaded Sound from the specified path.
