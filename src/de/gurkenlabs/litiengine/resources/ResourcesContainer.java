@@ -299,7 +299,7 @@ public abstract class ResourcesContainer<T> {
    * @return A {@code Future} object that can be used to retrieve the resource once it is finished loading
    */
   public Future<T> getAsync(String name) {
-    return ASYNC_POOL.submit(() -> this.get(this.getIdentifier(name)));
+    return ASYNC_POOL.submit(() -> this.load(Resources.getLocation(name)));
   }
 
   /**

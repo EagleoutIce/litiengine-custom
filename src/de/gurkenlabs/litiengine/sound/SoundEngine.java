@@ -30,7 +30,7 @@ import de.gurkenlabs.litiengine.sound.SoundPlayback.VolumeControl;
  * game. It allows to define the 2D coordinates of the sound or even pass in the
  * source entity of the sound which will adjust the position according to the
  * position of the entity.
- * 
+ *
  * <p>
  * The LILIengine sound engine supports .wav, .mp3 and
  * .ogg by default. If you need other file extensions, you have to write an own
@@ -61,7 +61,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
    * <p>
    * <b>You should never call this manually! Instead use the {@code Game.audio()} instance.</b>
    * </p>
-   * 
+   *
    * @see Game#audio()
    */
   public SoundEngine() {
@@ -73,7 +73,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Gets the maximum distance from the listener at which a sound source can
    * still be heard.
-   * 
+   *
    * @return The maximum distance at which a sound can be heard.
    */
   public int getMaxDistance() {
@@ -238,7 +238,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
 
   /**
    * Gets a list of all music playbacks.
-   * 
+   *
    * @return A list of all music playbacks.
    */
   public synchronized Collection<MusicPlayback> getAllMusic() {
@@ -248,12 +248,12 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound and updates its volume and pan by the current
    * entity location in relation to the listener location.
-   * 
+   *
    * @param entity
    *          The entity at which location the sound should be played.
    * @param sound
    *          The sound to play.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -264,12 +264,12 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays a {@code Sound} with the specified name and updates its volume and pan by the current
    * entity location in relation to the listener location.
-   * 
+   *
    * @param entity
    *          The entity at which location the sound should be played.
    * @param soundName
    *          The name of the sound to play.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -280,7 +280,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound and updates its volume and pan by the current
    * entity location in relation to the listener location.
-   * 
+   *
    * @param entity
    *          The entity at which location the sound should be played.
    * @param sound
@@ -297,7 +297,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound and updates its volume and pan by the current
    * entity location in relation to the listener location.
-   * 
+   *
    * @param entity
    *          The entity at which location the sound should be played.
    * @param sound
@@ -316,7 +316,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound and updates its volume and pan by the current
    * entity location in relation to the listener location.
-   * 
+   *
    * @param entity
    *          The entity at which location the sound should be played.
    * @param sound
@@ -337,7 +337,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays a {@code Sound} with the specified name and updates its volume and pan by the current
    * entity location in relation to the listener location.
-   * 
+   *
    * @param entity
    *          The entity at which location the sound should be played.
    * @param soundName
@@ -354,12 +354,12 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param location
    *          The location at which to play the sound.
    * @param sound
    *          The sound to play.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -370,12 +370,12 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays a {@code Sound} with the specified name at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param location
    *          The location at which to play the sound.
    * @param soundName
    *          The name of the sound to play.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -386,14 +386,14 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param x
    *          The x-coordinate of the location at which to play the sound.
    * @param y
    *          The y-coordinate of the location at which to play the sound.
    * @param sound
    *          The sound to play.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -404,14 +404,14 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays a {@code Sound} with the specified name at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param x
    *          The x-coordinate of the location at which to play the sound.
    * @param y
    *          The y-coordinate of the location at which to play the sound.
    * @param soundName
    *          The name of the sound to play.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -422,7 +422,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param location
    *          The location at which to play the sound.
    * @param sound
@@ -439,7 +439,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param location
    *          The location at which to play the sound.
    * @param sound
@@ -458,7 +458,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param location
    *          The location at which to play the sound.
    * @param sound
@@ -479,7 +479,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays a {@code Sound} with the specified name at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param location
    *          The location at which to play the sound.
    * @param soundName
@@ -496,7 +496,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param x
    *          The x-coordinate of the location at which to play the sound.
    * @param y
@@ -505,7 +505,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
    *          The sound to play.
    * @param loop
    *          Determines whether this playback should be looped or not.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -516,7 +516,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays a {@code Sound} with the specified name at the specified location and updates the volume
    * and pan in relation to the listener location.
-   * 
+   *
    * @param x
    *          The x-coordinate of the location at which to play the sound.
    * @param y
@@ -525,7 +525,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
    *          The name of the sound to play.
    * @param loop
    *          Determines whether this playback should be looped or not.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -536,10 +536,10 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound with the volume configured in the SOUND config
    * with a center pan.
-   * 
+   *
    * @param sound
    *          The sound to play.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -550,10 +550,10 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays a {@code Sound} with the specified name with the volume configured in the SOUND config
    * with a center pan.
-   * 
+   *
    * @param soundName
    *          The name of the sound to play.
-   * 
+   *
    * @return An {@link SFXPlayback} instance that allows to further process
    *         and control the played sound.
    */
@@ -564,7 +564,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound with the volume configured in the SOUND config
    * with a center pan.
-   * 
+   *
    * @param sound
    *          The sound to play.
    * @param loop
@@ -579,7 +579,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound with the volume configured in the SOUND config
    * with a center pan.
-   * 
+   *
    * @param sound
    *          The sound to play.
    * @param loop
@@ -596,7 +596,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays the specified sound with the volume configured in the SOUND config
    * with a center pan.
-   * 
+   *
    * @param sound
    *          The sound to play.
    * @param loop
@@ -615,7 +615,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * Plays a {@code Sound} with the specified name with the volume configured in the SOUND config
    * with a center pan.
-   * 
+   *
    * @param soundName
    *          The name of the sound to play.
    * @param loop
@@ -631,7 +631,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
    * Sets the default maximum distance from the listener at which a sound source can
    * still be heard. If the distance between the sound source and the listener
    * is greater than the specified value, the volume is set to 0.
-   * 
+   *
    * @param radius
    *          The maximum distance at which sounds can still be heard.
    */
@@ -655,7 +655,7 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
    * Unlike the {@code playSound} methods, the {@code SFXPlayback} objects returned by this method must be started using the
    * {@link SoundPlayback#start()} method. However, necessary resources are acquired <em>immediately</em> upon calling this method, and will remain in
    * use until the playback is either cancelled or finalized.
-   * 
+   *
    * @param sound
    *          The sound to play
    * @param supplier
@@ -680,10 +680,10 @@ public final class SoundEngine implements IUpdateable, ILaunchable {
   /**
    * This method allows to set the callback that is used by the SoundEngine to
    * determine where the listener location is.
-   * 
+   *
    * If not explicitly set, the SoundEngine uses the camera focus (center of the
    * screen) as listener location.
-   * 
+   *
    * @param callback
    *          The callback that determines the location of the sound listener.
    */
