@@ -75,7 +75,7 @@ public class RenderComponent extends Canvas {
   }
 
   public void init() {
-    this.createBufferStrategy(3);
+    this.createBufferStrategy(2);
     this.currentBufferStrategy = this.getBufferStrategy();
     this.currentAlpha = 1.1f;
   }

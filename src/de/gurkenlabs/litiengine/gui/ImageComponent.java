@@ -181,7 +181,7 @@ public class ImageComponent extends GuiComponent {
   public void setImageValign(Valign imageValign) {
     this.imageValign = imageValign;
   }
-  
+
   protected Spritesheet getSpritesheet() {
     return this.spritesheet;
   }
