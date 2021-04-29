@@ -34,7 +34,7 @@ public final class TextRenderer {
   /**
    * Draw text at the given coordinates. This variant of drawText() uses RenderingHints.VALUE_TEXT_ANTIALIAS_OFF as Anti-Aliasing method by
    * standard. For other Anti-Aliasing options, please use the drawText()-variant with five parameters.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -54,7 +54,7 @@ public final class TextRenderer {
 
   /**
    * Draws text with the specified alignment.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -75,7 +75,7 @@ public final class TextRenderer {
 
   /**
    * Draws text within the given boundaries using the specified alignment and scales the font size, if desired.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -109,7 +109,7 @@ public final class TextRenderer {
 
   /**
    * Draw text at the given coordinates. This variant of drawText() uses a provided AntiAliasing parameter.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -171,7 +171,7 @@ public final class TextRenderer {
    * Draw text at the given coordinates with a maximum line width for automatic line breaks. This variant of drawTextWithAutomaticLinebreaks() uses
    * RenderingHints.VALUE_TEXT_ANTIALIAS_OFF as Anti-Aliasing method by
    * standard. For other Anti-Aliasing options, please use the drawTextWithAutomaticLinebreaks()-variant with six parameters.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -193,7 +193,7 @@ public final class TextRenderer {
 
   /**
    * Draw text at the given coordinates with a maximum line width for automatic line breaks and a provided Anti-Aliasing parameter.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -214,7 +214,7 @@ public final class TextRenderer {
 
   /**
    * Draw text at the given coordinates with a maximum line width for automatic line breaks and a provided Anti-Aliasing parameter.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -273,7 +273,7 @@ public final class TextRenderer {
   /**
    * Draw text at the given coordinates with an outline in the provided color. This variant of drawTextWithShadow() doesn't use Anti-Aliasing.
    * For other Anti-Aliasing options, please specify the boolean value that controls it.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -300,7 +300,7 @@ public final class TextRenderer {
 
   /**
    * Draw text at the given coordinates with an outline in the provided color and a provided Anti-Aliasing parameter.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -323,7 +323,7 @@ public final class TextRenderer {
 
   /**
    * Draw text at the given coordinates with an outline in the provided color and a provided Anti-Aliasing parameter.
-   * 
+   *
    * @param g
    *          the Graphics2D object to draw on
    * @param text
@@ -386,14 +386,14 @@ public final class TextRenderer {
 
   /**
    * Retrieve the bounds of some text if it was to be drawn on the specified Graphics2D
-   * 
+   *
    * @param g
    *          The Graphics2D object to be drawn on
    * @param text
    *          The string to calculate the bounds of
-   * 
+   *
    * @return The bounds of the specified String in the specified Graphics context.
-   * 
+   *
    * @see java.awt.FontMetrics#getStringBounds(String str, Graphics context)
    */
   public static Rectangle2D getBounds(final Graphics2D g, final String text) {
@@ -402,7 +402,7 @@ public final class TextRenderer {
 
   /**
    * Retrieve the width of some text if it was to be drawn on the specified Graphics2D
-   * 
+   *
    * @param g
    *          The Graphics2D object to be drawn on
    * @param text
@@ -416,7 +416,7 @@ public final class TextRenderer {
 
   /**
    * Retrieve the height of some text if it was to be drawn on the specified Graphics2D
-   * 
+   *
    * @param g
    *          The Graphics2D object to be drawn on
    * @param text
